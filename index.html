@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Scanner User Form</title>
+</head>
+
+<body>
+
+
+    <div class="row">
+        <div class="">
+            <h1 class="user_data">User Data</h1>
+            <button id="myBtn">testing</button>
+            <input type="checkbox" id="check_box" name="fav_language" value="auto_allocate">
+            <label for="html"><strong>Auto Allocate</strong></label><br>
+            <br>
+            <div class="form-group">
+                <label for="job_preferences">Job Preferences: </label>
+                <ul>
+                    <label for="login_pl_number">PL Number</label>
+                    <input type="text" class="form-control" id="login_pl_number" placeholder="11111">
+                    <br>
+                    <label for="password">Password</label>
+
+                    <input type="password" class="form-control" id="Password" placeholder="***">
+                </ul>
+            </div>
+            <div class="distances_for_prebooks">
+                <label for="distances">Distances for prebooks</label>
+                <ul>
+                    <label for="close_home">Close to home</label>
+                    <input type="number" class="form-control" id="close_home" placeholder="11111"><br>
+
+                    <label for="far_home_far_london">Far from home and far from London</label>
+                    <input type="number" class="form-control" id="far_home_far_london" placeholder="11111"><br>
+
+                    <label for="far_home_close_london">Far from home and close to London</label>
+                    <input type="number" class="form-control" id="far_home_close_london" placeholder="11111"><br>
+
+                    <label for="is_london">London Pickup</label>
+                    <input type="number" class="form-control" id="is_london" placeholder="11111"><br>
+                </ul>
+            </div>
+            <div class="times">
+                <label for="time_ranges">Time Ranges</label>
+                <ul>
+                    <label for="user_data">Short morning time range</label>
+
+                    <span>
+                        <input type="time" class="time_slot" id="short_morning_start_time" placeholder="04:00" min="04:00" max="10:00">
+                      </span>
+                    <span>
+                        <input type="time" class="time_slot" id="short_morning_end_time" placeholder="06:30">
+                      </span><br>
+                    <label for="quarter2grade">Long morning time range</label>
+                    <span>
+                        <input type="time" class="time_slot" id="secondquartergrade" placeholder="04:00">
+                      </span>
+                    <span>
+                        <input type="time" class="time_slot" id="secondquartergrade" placeholder="10:00">
+                      </span><br>
+
+                    <label for="user_data">Short Weekend time range</label>
+                    <span>
+                        <input type="time" class="time_slot" id="secondquartergrade" placeholder="04:00">
+                      </span>
+                    <span>
+                        <input type="time" class="time_slot" id="secondquartergrade" placeholder="06:30">
+                        </span><br>
+
+                    <label for="longweek">Long Weekend time range</label>
+                    <span>
+                        <input type="time" class="time_slot" id="secondquartergrade" placeholder="04:00">
+                      </span>
+                    <span>
+                        <input type="time" class="time_slot" id="secondquartergrade" placeholder="10:00">
+                    </span>
+                </ul>
+            </div>
+            <div class="form-group">
+                <label for="job_preferences">Job Preferences: </label>
+                <ul>
+                    <label for="banned">List of banned postcodes</label>
+                    <input type="text" class="time_slot" id="banned" placeholder="W1, W2, W3">
+                    <br>
+                    <label for="perferred">List of preferred postcodes</label>
+
+                    <input type="text" class="time_slot" id="banned" placeholder="W1, W2, W3">
+                </ul>
+            </div>
+            <div class="form-group">
+                <label for="perferred">Code Priorities:</label>
+                <br>
+                <ul>
+                    <li>
+                        <label for="close">Within 30 min from home</label>
+                        <br>
+                        <textarea name="textarea" class="form-control" id="close" placeholder="W1, W2, W3" , cols="60" rows="10">
+                                </textarea>
+                    </li>
+                    <li>
+                        <label for="close">30 - 60 min from home</label>
+                        <br>
+                        <textarea name="textarea" class="form-control" id="close" placeholder="W1, W2, W3" , cols="60" rows="10">
+                                </textarea>
+                    </li>
+                    <li>
+                        <label for="close">About 30 min from home and close to London</label>
+                        <br>
+                        <textarea name="textarea" class="form-control" id="close" placeholder="W1, W2, W3" , cols="60" rows="10">
+                                </textarea>
+                    </li>
+                </ul>
+            </div>
+            <button type="submit" class="btn btn-default" onclick="process()">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

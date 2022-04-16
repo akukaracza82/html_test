@@ -1,0 +1,33 @@
+.user_data {
+    text-align: center;
+    color: red;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    margin: 50px 350px;
+    border: 1mm;
+    border-color: black;
+    border-style: dashed;
+    padding: 15px;
+}
+
+.times {
+    width: 800px;
+    /* position: absolute */
+}
+
+.distances_for_prebooks {
+    width: 800px
+}
+
+.time_slot {
+    position: relative;
+    display: flex;
+}
+
+body {
+    background-color: darkgrey;
+}
